@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --answerOptionColor: #eff1f4;
+  --answerOptionActiveColor: #ffffff;
+  --answerOptionBorderColor: #eff1f4;
+  --selectableCardActiveColor: transparent;
+  --answerOptionRadius: 8px;
+  --questionBackgroundColor: None;
+  --buttonRadius: 25px;
+  --buttonPadding: 15px;
+  --font: Gilroy;
+  --neutral900Color: #090a0a;
+  --neutral800Color: #4b4a4a;
+  --neutral700Color: #6d7279;
+  --neutral600Color: #878b92;
+  --neutral500Color: #9da0a6;
+  --neutral400Color: #aeb3bb;
+  --neutral300Color: #d2d5da;
+  --neutral200Color: #e1e4e9;
+  --neutral100Color: #eff1f4;
+  --blackColor: #000000;
+  --whiteColor: #ffffff;
+  --background1Color: #ffffff;
+  --background2Color: #eff1f4;
+  --background3Color: #ffffff;
+  --primary500Color: #e04141;
+  --primary400Color: #e04141;
+  --primary300Color: #e04141;
+  --primary200Color: #f2b3b3;
+  --primary100Color: #faeded;
+  --secondary1Color: #e04141;
+  --secondary2Color: #f3b456;
+  --accentRedColor: #df4142;
+  --accentGreenColor: #7fce6c;
+  --accentYellowColor: #f7c557;
+  --accentBlueColor: #68dffa;
+  --primaryButtonShadowColor: rgba(224, 65, 65, 0.31);
+  --secondaryButtonShadowColor: rgba(224, 65, 65, 0.31);
+  --shadowCardDefault: 0px 12px 24px rgba(109, 114, 121, 0.1),
+    0px 2px 6px rgba(109, 114, 121, 0.06);
+  --countdownTimeBlock: rgba(224, 65, 65, 0.4);
+  --additionalDiscountHeaderColor: rgba(224, 65, 65, 0.1);
+  --exclusiveOfferLogoBackgroundColor: rgba(224, 65, 65, 0.2);
+  --checkoutPriceBannerShadowColor: rgba(224, 65, 65, 0.4);
+  --countdownShadowColor: rgba(224, 65, 65, 0.15);
+  --choosePlanNotificationBackgroundColor: rgba(224, 65, 65, 0.2);
+  --howItWorksActivePointShadowColor: rgba(224, 65, 65, 0.32);
+  --priceSectionShadowColor: rgba(224, 65, 65, 0.4);
+  --priceSectionShadowSecondaryColor: rgba(210, 213, 218, 0.4);
+  --errorInputBackgroundColor: rgba(247, 197, 87, 0.3);
+  --checkboxBorderColor: var(--neutral300Color);
+  --buttonTextShadowColor: rgba(66, 33, 108, 0.12);
+  --pulseButtonShadowColor: rgba(224, 65, 65, 0.4);
+  --planInfoOnePriceBackgroundColor: rgba(225, 228, 233, 0.3);
+  --blurredHeaderBackgroundColor: rgba(255, 255, 255, 0.85);
+  --cardMoreBtnBackgroundColor: linear-gradient(
+    270deg,
+    #ffffff 63.54%,
+    rgba(255, 255, 255, 0) 91.43%
+  );
+  --cardMoreBtnBackgroundArColor: linear-gradient(
+    90deg,
+    #ffffff 63.54%,
+    rgba(255, 255, 255, 0) 91.43%
+  );
+  --backgroundLegalHalfOpacityColor: rgba(255, 255, 255, 0.5);
+  --exclusiveOfferLabelsLogoBackgroundColor: rgba(242, 179, 179, 0.4);
+  --shadow40Primary400BrandColor: rgba(224, 65, 65, 0.4);
+  --shadow80Primary400BrandColor: rgba(224, 65, 65, 0.8);
+  --shadow60Primary500BrandColor: rgba(224, 65, 65, 0.6);
+  --shadow20Neutral700Color: rgba(109, 114, 121, 0.2);
+  --neutral900withOpacity03: rgba(9, 10, 10, 0.3);
+  --shadow80Primary200Color: rgba(242, 179, 179, 0.8);
+  --shadow30Primary200Color: rgba(242, 179, 179, 0.3);
+  --shadow4Neutral900Color: rgba(9, 10, 10, 0.04);
+  --shadow40Primary100Color: rgba(250, 237, 237, 0.4);
+  --accentRedColorWithOpacity15: rgba(223, 65, 66, 0.15);
+  --pageTitleFontWeight: 600;
+  --paymentFormButtonColor: #00cfc3;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

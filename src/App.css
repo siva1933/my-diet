@@ -1,0 +1,196 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.quiz_progressContainer {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header_progress {
+  color: var(--neutral900Color);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.header_currentProgress {
+  color: var(--primary400Color);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.borderedCard {
+  position: relative;
+  display: flex;
+  padding: 20px;
+  border: 1px solid var(--answerOptionBorderColor);
+  background: var(--background3Color);
+  border-radius: 6px;
+  color: var(--neutral900Color);
+  cursor: pointer;
+}
+
+.borderedCard.isSelected {
+  border: 1px solid var(--primary300Color);
+  background-color: var(--selectableCardActiveColor);
+  box-shadow: 0 12px 24px rgba(43, 49, 57, 0.08),
+    0 4px 8px rgba(43, 55, 70, 0.06);
+}
+
+.isInline.borderedCard {
+  display: inline-block;
+  padding: 7px 16px;
+  margin: 8px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.isSmaller.borderedCard {
+  display: flex;
+  width: 83px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.isSmaller.borderedCard .isSelected {
+  box-shadow: 0 12px 24px rgba(43, 49, 57, 0.08),
+    0 4px 8px rgba(43, 55, 70, 0.06);
+}
+
+.isVertical .borderedCard {
+  max-width: 48%;
+  height: 368px;
+}
+
+.quiz_quizCard__UBUUC {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox + label {
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+}
+
+.checkbox + label::before {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: solid 1px var(--checkboxBorderColor);
+  border-radius: 12px;
+  content: "";
+  vertical-align: text-top;
+}
+
+.checkbox:checked + label::before {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: var(--primary300Color);
+}
+
+.checkbox:disabled + label {
+  position: relative;
+  color: #b8b8b8;
+  cursor: auto;
+}
+
+.checkbox:disabled + label::before {
+  background: #ddd;
+  box-shadow: none;
+}
+
+.checkbox:checked + label::after {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  /* background-image: url(imagePath('/public/images/checkmark-white.svg')); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 9px 7px;
+  border-radius: 20px;
+  content: "";
+}
+
+.quiz_quizCardContainer__qB__T {
+  padding: 0 16px 0 0;
+  margin: 16px 0;
+  background: var(--answerOptionColor);
+  border-radius: var(--answerOptionRadius);
+}
+
+.quiz_quizCard__UBUUC {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.quiz_quizCardHeader__egKdh {
+  color: var(--neutral900Color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.button-module_defaultColor__MMrQM {
+  background: var(--primary400Color);
+  box-shadow: 0 4px 16px var(--primaryButtonShadowColor);
+}
+.button-module_container__ssMyd {
+  align-items: center;
+  border: none;
+  border-radius: var(--buttonRadius);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  letter-spacing: 0.007em;
+  padding: var(--buttonPadding);
+  text-shadow: 0 1px 2px var(--buttonTextShadowColor);
+  width: 100%;
+}
