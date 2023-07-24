@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import back from "./assets/back.svg";
+import Header from "./components/Header";
 
 function App() {
   const [idx, setIdx] = useState(0);
@@ -74,45 +75,48 @@ function App() {
     }
   };
   return (
-    <div className="w-50 m-auto">
-      <div className="quiz_progressContainer">
-        <img
-          src={back}
-          alt=""
-          width={24}
-          height={24}
-          onClick={() => {
-            setIdx((b) => (b > 0 ? b - 1 : b));
-          }}
-        />
-        <span className="header_progress">
-          <span className="header_currentProgress">{idx + 1}</span>
-          <span>/</span>
-          {questions.length}
-        </span>
-      </div>
-      <div class="quiz_quizContent__GBDnO">
-        <div class="generated-single-select-question_header__fKUem">
-          <h1 class="generated-single-select-question_headerTitle__5iVTB">
-            {questions[idx].question}
-          </h1>
-        </div>
-      </div>
-      {renderQuestion()}
-      <div class="submit-animated-button_staticButton__TXhEJ quiz_buttonContainer__OCzhf">
-        <button
-          onClick={() => {
-            setIdx((b) => b + 1);
-          }}
-          class="button-module_container__ssMyd button-module_defaultColor__MMrQM"
-          data-button="age-question-submit"
-          disabled={idx + 1 === questions.length}
-        >
-          <span as="span" class="typography-module_body1Bold__ghm17">
-            NEXT STEP
+    <div>
+      <Header />
+      <section className="quiz_container">
+        <div className="quiz_progressContainer">
+          <img
+            src={back}
+            alt=""
+            width={24}
+            height={24}
+            onClick={() => {
+              setIdx((b) => (b > 0 ? b - 1 : b));
+            }}
+          />
+          <span className="header_progress">
+            <span className="header_currentProgress">{idx + 1}</span>
+            <span>/</span>
+            {questions.length}
           </span>
-        </button>
-      </div>
+        </div>
+        <div class="quiz_quizContent__GBDnO">
+          <div class="generated-single-select-question_header__fKUem">
+            <h1 class="generated-single-select-question_headerTitle__5iVTB">
+              {questions[idx].question}
+            </h1>
+          </div>
+        </div>
+        {renderQuestion()}
+        <div class="submit-animated-button_staticButton__TXhEJ quiz_buttonContainer__OCzhf">
+          <button
+            onClick={() => {
+              setIdx((b) => b + 1);
+            }}
+            class="button-module_container__ssMyd button-module_defaultColor__MMrQM"
+            data-button="age-question-submit"
+            disabled={idx + 1 === questions.length}
+          >
+            <span as="span" class="typography-module_body1Bold__ghm17">
+              NEXT STEP
+            </span>
+          </button>
+        </div>
+      </section>
     </div>
   );
 }
