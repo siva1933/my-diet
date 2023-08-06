@@ -23,6 +23,24 @@
   color: var(--primary400Color);
 }
 
+form {
+  width: 50%;
+  margin: auto;
+}
+form h1 {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.form-btns{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.mr-2 {
+  margin-right: 2rem;
+}
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

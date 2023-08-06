@@ -1,3 +1,6 @@
+@import url("bootstrap/dist/css/bootstrap.min.css");
+/* @import url("bootstrap-icons/font/bootstrap-icons.css"); */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -148,17 +151,32 @@ button:focus-visible {
 }
 
 .logo {
-  width: 100px; /* Adjust the width as per your logo size */
+  width: 30px; /* Adjust the width as per your logo size */
   height: auto;
 }
 
-.login-button {
+.primary-button {
   padding: 0.5rem 1rem;
   border: none;
   background-color: #007bff;
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
+}
+
+.secondary-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border: #007bff 1px solid;
+  color: #007bff;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.d-flex {
+  display: flex;
+  gap: 1rem;
 }
 
 /* Responsive styles */

@@ -16,7 +16,7 @@ const Header = () => {
     <header className="header">
       <img src="/vite.svg" alt="Logo" className="logo" />
       {!isLogin ? (
-        <button className="login-button" onClick={handleLoginToggle}>
+        <button className="primary-button" onClick={handleLoginToggle}>
           Login
         </button>
       ) : (
